@@ -1,0 +1,16 @@
+name: jira-linter
+
+on: [pull_request]
+
+jobs:
+  jira-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: btwrk/jira-linter@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          jira-user: ${{ secrets.JIRA_USER }}
+          jira-token: ${{ secrets.JIRA_TOKEN }}
+          jira-base-url: https://payexjira.atlassian.net
+          skip-branches: '^(develop|master|main|release\/v?\d+)$'
+          validate-issue-status: true
