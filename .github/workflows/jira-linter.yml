@@ -13,4 +13,3 @@ jobs:
           jira-token: ${{ secrets.JIRA_TOKEN }}
           jira-base-url: https://payexjira.atlassian.net
           skip-branches: '^(develop|master|main|release\/v?\d+)$'
-          validate-issue-status: true
