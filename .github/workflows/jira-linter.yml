@@ -1,4 +1,4 @@
-name: jira-linter
+name: jira-linter-2ed7a2c7c90a641567ec2eb31d3d46173bba74b6
 
 on: [pull_request]
 
